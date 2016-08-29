@@ -19,6 +19,9 @@
 		B91280D71D6D8B7500FBAE98 /* AutoLayoutLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = B91280D61D6D8B7500FBAE98 /* AutoLayoutLabelView.m */; };
 		B91280DA1D6D8B8400FBAE98 /* CreatQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B91280D91D6D8B8400FBAE98 /* CreatQRCode.m */; };
 		B91280DD1D6D8C6400FBAE98 /* CheckVersionUnils.m in Sources */ = {isa = PBXBuildFile; fileRef = B91280DC1D6D8C6400FBAE98 /* CheckVersionUnils.m */; };
+		B91280ED1D6EC54D00FBAE98 /* CalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B91280E91D6EC54D00FBAE98 /* CalendarCell.m */; };
+		B91280EE1D6EC54D00FBAE98 /* CalendarPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B91280EB1D6EC54D00FBAE98 /* CalendarPicker.m */; };
+		B91280EF1D6EC54D00FBAE98 /* CalendarPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91280EC1D6EC54D00FBAE98 /* CalendarPicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,11 @@
 		B91280D91D6D8B8400FBAE98 /* CreatQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatQRCode.m; sourceTree = "<group>"; };
 		B91280DB1D6D8C6400FBAE98 /* CheckVersionUnils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckVersionUnils.h; sourceTree = "<group>"; };
 		B91280DC1D6D8C6400FBAE98 /* CheckVersionUnils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckVersionUnils.m; sourceTree = "<group>"; };
+		B91280E81D6EC54D00FBAE98 /* CalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarCell.h; sourceTree = "<group>"; };
+		B91280E91D6EC54D00FBAE98 /* CalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarCell.m; sourceTree = "<group>"; };
+		B91280EA1D6EC54D00FBAE98 /* CalendarPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarPicker.h; sourceTree = "<group>"; };
+		B91280EB1D6EC54D00FBAE98 /* CalendarPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarPicker.m; sourceTree = "<group>"; };
+		B91280EC1D6EC54D00FBAE98 /* CalendarPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarPicker.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,11 @@
 				B91280D91D6D8B8400FBAE98 /* CreatQRCode.m */,
 				B91280DB1D6D8C6400FBAE98 /* CheckVersionUnils.h */,
 				B91280DC1D6D8C6400FBAE98 /* CheckVersionUnils.m */,
+				B91280E81D6EC54D00FBAE98 /* CalendarCell.h */,
+				B91280E91D6EC54D00FBAE98 /* CalendarCell.m */,
+				B91280EA1D6EC54D00FBAE98 /* CalendarPicker.h */,
+				B91280EB1D6EC54D00FBAE98 /* CalendarPicker.m */,
+				B91280EC1D6EC54D00FBAE98 /* CalendarPicker.xib */,
 				B912809F1D6D8B5100FBAE98 /* Supporting Files */,
 			);
 			path = MyCollectionTools;
@@ -265,6 +278,7 @@
 			files = (
 				B91280AF1D6D8B5100FBAE98 /* LaunchScreen.storyboard in Resources */,
 				B91280AC1D6D8B5100FBAE98 /* Assets.xcassets in Resources */,
+				B91280EF1D6EC54D00FBAE98 /* CalendarPicker.xib in Resources */,
 				B91280AA1D6D8B5100FBAE98 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +306,10 @@
 			files = (
 				B91280D71D6D8B7500FBAE98 /* AutoLayoutLabelView.m in Sources */,
 				B91280A71D6D8B5100FBAE98 /* ViewController.m in Sources */,
+				B91280ED1D6EC54D00FBAE98 /* CalendarCell.m in Sources */,
 				B91280DD1D6D8C6400FBAE98 /* CheckVersionUnils.m in Sources */,
 				B91280D41D6D8B6900FBAE98 /* UIColor+Add.m in Sources */,
+				B91280EE1D6EC54D00FBAE98 /* CalendarPicker.m in Sources */,
 				B91280A41D6D8B5100FBAE98 /* AppDelegate.m in Sources */,
 				B91280A11D6D8B5100FBAE98 /* main.m in Sources */,
 				B91280DA1D6D8B8400FBAE98 /* CreatQRCode.m in Sources */,
@@ -522,6 +538,7 @@
 				B91280CB1D6D8B5100FBAE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B91280CC1D6D8B5100FBAE98 /* Build configuration list for PBXNativeTarget "MyCollectionToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +547,7 @@
 				B91280CE1D6D8B5100FBAE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B91280CF1D6D8B5100FBAE98 /* Build configuration list for PBXNativeTarget "MyCollectionToolsUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +556,7 @@
 				B91280D11D6D8B5100FBAE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

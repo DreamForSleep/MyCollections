@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "CreatQRCode.h"
+#import "CalendarPicker.h"
+
 
 @interface ViewController ()
 
@@ -17,10 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+#warning mark - 生成二维码图片
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    [self.view addSubview:imageView];
+//    imageView.image = [CreatQRCode creatImageWithString:@"天下无敌"];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [self.view addSubview:imageView];
-    imageView.image = [CreatQRCode creatImageWithString:@"天下无敌"];
+#warning mark - 日历
+    UIView *calendarView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, 300)];
+    CalendarPicker *calendarPicker = [CalendarPicker showOnView:calendarView];
+    calendarPicker.today = [NSDate date];
+    calendarPicker.date = calendarPicker.today;
+    [self.view addSubview:calendarView];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
